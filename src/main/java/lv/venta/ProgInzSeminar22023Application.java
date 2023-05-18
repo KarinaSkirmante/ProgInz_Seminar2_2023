@@ -52,6 +52,10 @@ public class ProgInzSeminar22023Application {
 				grRepo.save(new Grade(8, st2, c1));//Baiba nopelnīja 8 JAVA
 				grRepo.save(new Grade(10, st2, c2));//Baiba nopelnīja 10 DB
 				
+				//TODO izveidot jaunu zaru un pāŗiet uz to (git branch xxx, ,git checkout xxx)
+				//TODO pārveidot saiti starp profesoru un kursu uz ManyToMAny
+				//TODO pamainīt testModel funkciju, 
+				//ieliekot 1.profesoram divus kursu un 1.kursam, ka to pasniedz abi profesori
 				
 			}
 		};
