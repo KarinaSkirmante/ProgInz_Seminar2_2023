@@ -41,7 +41,7 @@ public class ProgInzSeminar22023Application {
 				stRepo.save(st1);
 				stRepo.save(st2);
 				
-				Course c1 = new Course("JAVA I", 4, pr1);
+				Course c1 = new Course("Java i", 4, pr1);
 				Course c2 = new Course("Datubazes", 4, pr2);
 				courRepo.save(c1);
 				courRepo.save(c2);

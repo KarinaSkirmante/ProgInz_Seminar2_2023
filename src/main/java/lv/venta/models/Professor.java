@@ -50,7 +50,7 @@ public class Professor {
 	@Column(name = "Surname")
 	private String surname;
 	
-	@NotBlank
+	@NotNull
 	@Column(name = "Degree")
 	private Degree degree;
 
