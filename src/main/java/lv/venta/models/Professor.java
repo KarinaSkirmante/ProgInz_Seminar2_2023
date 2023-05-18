@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
@@ -57,7 +58,7 @@ public class Professor {
 	@Column(name = "Degree")
 	private Degree degree;
 
-	
+	@ManyToMany(mappedBy = "professors")
 	private Collection<Course> courses = new ArrayList<Course>();
 	
 	public Professor(String name, String surname, Degree degree) {
