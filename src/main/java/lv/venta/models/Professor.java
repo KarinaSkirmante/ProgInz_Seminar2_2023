@@ -19,6 +19,7 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -58,6 +59,7 @@ public class Professor {
 	@Column(name = "Degree")
 	private Degree degree;
 
+	@ToString.Exclude
 	@ManyToMany(mappedBy = "professors")
 	private Collection<Course> courses = new ArrayList<Course>();
 	

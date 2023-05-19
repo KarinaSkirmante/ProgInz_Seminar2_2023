@@ -49,6 +49,7 @@ public class Course {
 	@Column(name = "CreditPoints")
 	private int creditPoints;
 	
+	@ToString.Exclude
 	@ManyToMany
 	@JoinTable(name = "course_prof_table",
 	joinColumns = @JoinColumn(name="Idp"),
