@@ -75,5 +75,7 @@ public class Professor {
 		}
 	}
 	
+	//TODO izveidot kursa izdzēšanas funkciju
+	
 
 }

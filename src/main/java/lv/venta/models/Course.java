@@ -61,10 +61,10 @@ public class Course {
 
 	public Course(
 			@NotNull @Pattern(regexp = "[A-ZĒŪĪĻĶŠĀŽČŅ]{1}[a-zēūīļķšāžčņ\\ ]+", message = "Pirmajam burtam jābūt lielajam") @Size(min = 5, max = 25) String title,
-			@Min(1) @Max(20) int creditPoints, Professor professor) {
+			@Min(1) @Max(20) int creditPoints, ArrayList<Professor> professors) {
 		this.title = title;
 		this.creditPoints = creditPoints;
-		//this.professor = professor;
+		this.professors = professors;
 	}
 	
 	
@@ -74,5 +74,7 @@ public class Course {
 			professors.add(inputProfessor);
 		}
 	}
+	
+	//TODO izveidot profesora izdzēsanas funkciju
 	
 }
