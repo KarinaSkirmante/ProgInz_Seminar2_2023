@@ -68,7 +68,12 @@ public class Professor {
 	}
 	
 	
-	
+	public void addCourse(Course inputCourse) {
+		if(!courses.contains(inputCourse))
+		{
+			courses.add(inputCourse);
+		}
+	}
 	
 
 }
